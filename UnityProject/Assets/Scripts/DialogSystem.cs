@@ -19,4 +19,9 @@ public class DialogSystem : MonoBehaviour
         textName.text = getName;
         textContent.text = getContent;
     }
+
+    public void HideDialog()
+    {
+        uiGroup.alpha = 0;
+    }
 }
