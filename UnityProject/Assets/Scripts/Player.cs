@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
-        ani.SetBool("跑步開關", h != 0 || v != 0);
+        ani.SetBool("跑步開關", h != 0 || v != 0);  // 水平 不等於 0 或者 垂直 不等於 0 就跑步
     }
 
     /// <summary>
@@ -42,15 +42,17 @@ public class Player : MonoBehaviour
     {
         ani.SetBool("跳躍開關", Input.GetKeyDown(KeyCode.Space));
 
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
-        //    //print("跳躍動畫");
-        //    ani.SetBool("跳躍開關", true);
-        //}
-        //else
-        //{
-        //    ani.SetBool("跳躍開關", false);
-        //}
+        /**
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            print("跳躍動畫");
+            ani.SetBool("跳躍開關", true);
+        }
+        else
+        {
+            ani.SetBool("跳躍開關", false);
+        }
+        */
     }
 
     /// <summary>
